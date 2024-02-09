@@ -51,11 +51,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "pages": ["introduction", "quickstart", "development"]
     },
     {
       "group": "Essentials",
@@ -70,16 +66,37 @@
     },
     {
       "group": "API Documentation",
+      "pages": ["api-reference/introduction"]
+    },
+    {
+      "group": "Assistant Collection",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/assistants/get-all",
+        "api-reference/assistants/find-id",
+        "api-reference/assistants/create-web",
+        "api-reference/assistants/create-telephony",
+        "api-reference/assistants/delete",
+        "api-reference/assistants/update"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Conversational Template Collection",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/templates/get-all",
+        "api-reference/templates/find-id",
+        "api-reference/templates/create",
+        "api-reference/templates/delete",
+        "api-reference/templates/update"
+      ]
+    },
+    {
+      "group": "Phone Numbers Collection",
+      "pages": [
+        "api-reference/numbers/get-list",
+        "api-reference/numbers/get-all",
+        "api-reference/numbers/find-id",
+        "api-reference/numbers/create",
+        "api-reference/numbers/delete"
       ]
     }
   ],
