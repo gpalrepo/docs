@@ -98,6 +98,13 @@
         "api-reference/numbers/create",
         "api-reference/numbers/delete"
       ]
+    },
+    {
+      "group": "Conversation Transcripts Collection",
+      "pages": [
+        "api-reference/transcripts/filter-id",
+        "api-reference/transcripts/find-id"
+      ]
     }
   ],
   "footerSocials": {
