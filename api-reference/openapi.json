@@ -60,7 +60,7 @@
       }
     },
     "/templates/get-all": {
-      "post": {
+      "get": {
         "operationId": "template_get_all",
         "summary": "",
         "parameters": [
@@ -188,7 +188,7 @@
       }
     },
     "/templates/find-id": {
-      "post": {
+      "get": {
         "operationId": "template_find_id",
         "summary": "",
         "parameters": [],
@@ -425,7 +425,7 @@
       }
     },
     "/templates/delete": {
-      "post": {
+      "delete": {
         "operationId": "template_delete",
         "summary": "",
         "parameters": [],
@@ -547,7 +547,7 @@
       }
     },
     "/templates/update": {
-      "post": {
+      "patch": {
         "operationId": "template_update",
         "summary": "",
         "parameters": [],
@@ -672,7 +672,7 @@
       }
     },
     "/numbers/get-list": {
-      "post": {
+      "get": {
         "operationId": "number_get_all",
         "summary": "",
         "parameters": [
@@ -800,7 +800,7 @@
       }
     },
     "/numbers/get-all": {
-      "post": {
+      "get": {
         "operationId": "number_get_all",
         "summary": "",
         "parameters": [
@@ -928,7 +928,7 @@
       }
     },
     "/numbers/find-id": {
-      "post": {
+      "get": {
         "operationId": "number_find_id",
         "summary": "",
         "parameters": [],
@@ -1172,7 +1172,7 @@
       }
     },
     "/numbers/delete": {
-      "post": {
+      "delete": {
         "operationId": "number_delete",
         "summary": "",
         "parameters": [],
@@ -1293,130 +1293,8 @@
         ]
       }
     },
-    "/numbers/update": {
-      "post": {
-        "operationId": "number_update",
-        "summary": "",
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "string",
-                    "description": "ID of the phone number to create."
-                  }
-                },
-                "required": ["id"]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Successful response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method Not Allowed",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "tags": ["number_update"],
-        "security": [
-          {
-            "bearer": []
-          }
-        ]
-      }
-    },
     "/assistants/get-all": {
-      "post": {
+      "get": {
         "operationId": "assistant_get_all",
         "summary": "",
         "parameters": [
@@ -1544,7 +1422,7 @@
       }
     },
     "/assistants/find-id": {
-      "post": {
+      "get": {
         "operationId": "assistant_find_id",
         "summary": "",
         "parameters": [],
@@ -2032,7 +1910,7 @@
       }
     },
     "/assistants/delete": {
-      "post": {
+      "delete": {
         "operationId": "assistant_delete",
         "summary": "",
         "parameters": [],
@@ -2154,7 +2032,7 @@
       }
     },
     "/assistants/update": {
-      "post": {
+      "patch": {
         "operationId": "assistant_update",
         "summary": "",
         "parameters": [],
@@ -2348,7 +2226,7 @@
       }
     },
     "/transcripts/filter-id": {
-      "post": {
+      "get": {
         "operationId": "transcript_filter_id",
         "summary": "",
         "parameters": [
@@ -2493,7 +2371,7 @@
       }
     },
     "/transcripts/find-id": {
-      "post": {
+      "get": {
         "operationId": "transcript_find_id",
         "summary": "",
         "parameters": [],
