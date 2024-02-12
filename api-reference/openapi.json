@@ -2669,6 +2669,7 @@
           },
           "conversational_states": {
             "type": "object",
+            "description": "You can use our [generator](https://alto.dialme.at/generator) to create a conversational_states and export it as JSON. The JSON should be in the format of the `generator` JSON export.",
             "additionalProperties": {
               "type": "object",
               "properties": {
