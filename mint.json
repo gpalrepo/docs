@@ -69,6 +69,16 @@
       "pages": ["api-reference/introduction"]
     },
     {
+      "group": "Conversational Template Collection",
+      "pages": [
+        "api-reference/templates/get-all",
+        "api-reference/templates/find-id",
+        "api-reference/templates/create",
+        "api-reference/templates/delete",
+        "api-reference/templates/update"
+      ]
+    },
+    {
       "group": "Assistant Collection",
       "pages": [
         "api-reference/assistants/get-all",
@@ -77,16 +87,6 @@
         "api-reference/assistants/create-telephony",
         "api-reference/assistants/delete",
         "api-reference/assistants/update"
-      ]
-    },
-    {
-      "group": "Conversational Template Collection",
-      "pages": [
-        "api-reference/templates/get-all",
-        "api-reference/templates/find-id",
-        "api-reference/templates/create",
-        "api-reference/templates/delete",
-        "api-reference/templates/update"
       ]
     },
     {

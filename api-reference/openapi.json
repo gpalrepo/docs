@@ -669,6 +669,28 @@
         "summary": "",
         "parameters": [
           {
+            "name": "areaCode",
+            "required": false,
+            "in": "query",
+            "description": "Filter by area code",
+            "schema": {
+              "minimum": 0,
+              "maximum": 1000,
+              "type": "number"
+            }
+          },
+          {
+            "name": "contains",
+            "required": false,
+            "in": "query",
+            "description": "Filter by particular number",
+            "schema": {
+              "minimum": 0,
+              "maximum": 1000,
+              "type": "number"
+            }
+          },
+          {
             "name": "limit",
             "required": false,
             "in": "query",
@@ -1595,8 +1617,8 @@
                   },
                   "webhook": {
                     "type": "string",
-                    "minLength": 3,
-                    "maxLength": 180
+                    "minLength": 5,
+                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
                   }
                 },
                 "required": ["template_id", "name", "voice"]
@@ -1776,8 +1798,8 @@
                   },
                   "webhook": {
                     "type": "string",
-                    "minLength": 3,
-                    "maxLength": 180
+                    "minLength": 5,
+                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
                   }
                 },
                 "required": ["template_id", "name", "voice", "phone_number"]
@@ -2090,8 +2112,8 @@
                       },
                       "webhook": {
                         "type": "string",
-                        "minLength": 3,
-                        "maxLength": 180
+                        "minLength": 5,
+                        "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
                       }
                     }
                   }
@@ -2618,7 +2640,7 @@
                         "minLength": 3,
                         "maxLength": 360
                       },
-                      "to": {
+                      "target_audience": {
                         "type": "string",
                         "minLength": 3,
                         "maxLength": 360
@@ -2629,7 +2651,7 @@
                         "maxLength": 360
                       }
                     },
-                    "required": ["role", "to", "goal"]
+                    "required": ["role", "target_audience", "goal"]
                   }
                 }
               },
@@ -2645,81 +2667,35 @@
               }
             ]
           },
-          "flow": {
+          "conversational_states": {
             "type": "object",
-            "description": "You can use our [generator](https://alto.dialme.at/generate-flow) to create a flowchart and export it as JSON. The JSON should be in the format of the `generator` JSON export.",
-            "properties": {
-              "nodes": {
-                "type": "array",
-                "minItems": 2,
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 2,
-                      "maxLength": 360
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "objective": { "type": "string" },
+                "branch_logic": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{ "type": "number" }, { "type": "string" }]
                     },
-                    "type": { "type": "string", "enum": ["custom"] },
-                    "data": {
-                      "type": "object",
-                      "properties": {
-                        "label": {
-                          "type": "string",
-                          "minLength": 2,
-                          "maxLength": 360
-                        }
-                      },
-                      "required": ["label"]
-                    },
-                    "position": {
-                      "type": "object",
-                      "properties": {
-                        "x": { "type": "number" },
-                        "y": { "type": "number" }
-                      },
-                      "required": ["x", "y"]
-                    }
-                  },
-                  "required": ["id", "type", "data", "position"]
-                }
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "starter_message": { "type": "string" }
               },
-              "edges": {
-                "type": "array",
-                "minItems": 2,
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 2,
-                      "maxLength": 360
-                    },
-                    "type": { "type": "string", "enum": ["custom"] },
-                    "source": {
-                      "type": "string",
-                      "minLength": 2,
-                      "maxLength": 360
-                    },
-                    "target": {
-                      "type": "string",
-                      "minLength": 2,
-                      "maxLength": 360
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 2,
-                      "maxLength": 360
-                    }
-                  },
-                  "required": ["id", "source", "target", "label", "type"]
-                }
-              }
-            },
-            "required": ["nodes", "edges"]
+              "required": ["objective", "branch_logic"]
+            }
           }
         },
-        "required": ["title", "description", "instruction", "flow"]
+        "required": [
+          "title",
+          "description",
+          "instruction",
+          "conversational_states"
+        ]
       }
     }
   }
