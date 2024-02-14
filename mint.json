@@ -7,12 +7,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#1d4ed8",
+    "light": "#6aa9ff",
+    "dark": "#2556b3",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#1d4ed8",
+      "to": "#6aa9ff"
     }
   },
   "topbarLinks": [
@@ -23,42 +23,16 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://alto.dialme.at"
+    "url": "https://alto.dialme.at/assistants/dashboard"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "mailto:team@dialme.at"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
+      "name": "Customer Support",
+      "icon": "message-lines",
       "url": "mailto:team@dialme.at"
     }
   ],
   "navigation": [
-    {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
     {
       "group": "API Documentation",
       "pages": ["api-reference/introduction"]
