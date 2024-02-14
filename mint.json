@@ -103,8 +103,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "mailto:team@dialme.at",
+    "github": "mailto:team@dialme.at",
+    "linkedin": "mailto:team@dialme.at"
   }
 }
