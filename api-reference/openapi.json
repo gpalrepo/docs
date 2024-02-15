@@ -1577,7 +1577,21 @@
                       "es-ES-Neural2-B",
                       "es-ES-Neural2-F",
                       "es-ES-Neural2-C",
-                      "es-ES-Neural2-D"
+                      "es-ES-Neural2-D",
+                      "en-US-Eleven-Marcus",
+                      "en-US-Eleven-Myra",
+                      "en-US-Eleven-Adam",
+                      "en-US-OpenAI-alloy",
+                      "en-US-OpenAI-echo",
+                      "en-GB-OpenAI-fable",
+                      "en-US-OpenAI-onyx",
+                      "en-US-OpenAI-nova",
+                      "en-US-OpenAI-shimmer",
+                      "es-ES-OpenAI-alloy",
+                      "es-ES-OpenAI-echo",
+                      "es-ES-OpenAI-onyx",
+                      "es-ES-OpenAI-nova",
+                      "es-ES-OpenAI-shimmer"
                     ]
                   },
                   "end_screen": { "type": "string" },
@@ -1762,7 +1776,21 @@
                       "es-ES-Neural2-B",
                       "es-ES-Neural2-F",
                       "es-ES-Neural2-C",
-                      "es-ES-Neural2-D"
+                      "es-ES-Neural2-D",
+                      "en-US-Eleven-Marcus",
+                      "en-US-Eleven-Myra",
+                      "en-US-Eleven-Adam",
+                      "en-US-OpenAI-alloy",
+                      "en-US-OpenAI-echo",
+                      "en-GB-OpenAI-fable",
+                      "en-US-OpenAI-onyx",
+                      "en-US-OpenAI-nova",
+                      "en-US-OpenAI-shimmer",
+                      "es-ES-OpenAI-alloy",
+                      "es-ES-OpenAI-echo",
+                      "es-ES-OpenAI-onyx",
+                      "es-ES-OpenAI-nova",
+                      "es-ES-OpenAI-shimmer"
                     ]
                   },
                   "phone_number": {
@@ -2067,7 +2095,21 @@
                           "es-ES-Neural2-B",
                           "es-ES-Neural2-F",
                           "es-ES-Neural2-C",
-                          "es-ES-Neural2-D"
+                          "es-ES-Neural2-D",
+                          "en-US-Eleven-Marcus",
+                          "en-US-Eleven-Myra",
+                          "en-US-Eleven-Adam",
+                          "en-US-OpenAI-alloy",
+                          "en-US-OpenAI-echo",
+                          "en-GB-OpenAI-fable",
+                          "en-US-OpenAI-onyx",
+                          "en-US-OpenAI-nova",
+                          "en-US-OpenAI-shimmer",
+                          "es-ES-OpenAI-alloy",
+                          "es-ES-OpenAI-echo",
+                          "es-ES-OpenAI-onyx",
+                          "es-ES-OpenAI-nova",
+                          "es-ES-OpenAI-shimmer"
                         ]
                       },
                       "end_screen": { "type": "string" },
