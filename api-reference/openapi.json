@@ -95,11 +95,15 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TemplateResponse"
+                      }
                     }
                   }
                 }
@@ -113,11 +117,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -131,11 +133,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -149,11 +149,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -167,11 +165,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -209,11 +205,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/TemplateResponse"
                     }
                   }
                 }
@@ -227,11 +224,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -245,11 +240,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -263,11 +256,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -281,11 +272,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -324,11 +313,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/TemplateResponse"
                     }
                   }
                 }
@@ -342,11 +332,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -360,11 +348,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -378,11 +364,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -396,11 +380,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -446,11 +428,13 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "deleted": {
+                      "type": "string",
+                      "example": "tp_***"
                     }
                   }
                 }
@@ -464,11 +448,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -482,11 +464,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -500,11 +480,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -518,11 +496,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -571,11 +547,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/TemplateResponse"
                     }
                   }
                 }
@@ -589,11 +566,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -607,11 +582,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -625,11 +598,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -643,11 +614,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -721,11 +690,37 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "phone_number": {
+                            "type": "string"
+                          },
+                          "friendlyName": {
+                            "type": "string"
+                          },
+                          "capabilities": {
+                            "type": "object",
+                            "properties": {
+                              "voice": {
+                                "type": "boolean"
+                              },
+                              "SMS": {
+                                "type": "boolean"
+                              },
+                              "MMS": {
+                                "type": "boolean"
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -739,11 +734,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -757,11 +750,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -775,11 +766,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -793,11 +782,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -849,11 +836,15 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/PhoneNumberResponse"
+                      }
                     }
                   }
                 }
@@ -867,11 +858,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -885,11 +874,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -903,11 +890,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -921,11 +906,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -963,11 +946,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/PhoneNumberResponse"
                     }
                   }
                 }
@@ -981,11 +965,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -999,11 +981,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1017,11 +997,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1035,11 +1013,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1085,11 +1061,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/PhoneNumberResponse"
                     }
                   }
                 }
@@ -1103,11 +1080,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1121,11 +1096,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1139,11 +1112,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1157,11 +1128,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1207,11 +1176,13 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "deleted": {
+                      "type": "string",
+                      "example": "ph_***"
                     }
                   }
                 }
@@ -1225,11 +1196,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1243,11 +1212,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1261,11 +1228,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1279,11 +1244,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1335,11 +1298,15 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/AssistantResponse"
+                      }
                     }
                   }
                 }
@@ -1353,11 +1320,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1371,11 +1336,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1389,11 +1352,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1407,11 +1368,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1449,11 +1408,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/AssistantResponse"
                     }
                   }
                 }
@@ -1467,11 +1427,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1485,11 +1443,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1503,11 +1459,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1521,11 +1475,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1648,10 +1600,14 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/AssistantResponse"
+                    },
+                    "embed": {
                       "type": "string"
                     }
                   }
@@ -1666,11 +1622,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1684,11 +1638,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1702,11 +1654,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1720,11 +1670,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1843,11 +1791,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/AssistantResponse"
                     }
                   }
                 }
@@ -1861,11 +1810,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -1879,11 +1826,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -1897,11 +1842,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -1915,11 +1858,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -1965,11 +1906,13 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "deleted": {
+                      "type": "boolean",
+                      "example": "as_***"
                     }
                   }
                 }
@@ -1983,11 +1926,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -2001,11 +1942,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -2019,11 +1958,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -2037,11 +1974,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -2173,11 +2108,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/AssistantResponse"
                     }
                   }
                 }
@@ -2191,11 +2127,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -2209,11 +2143,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -2227,11 +2159,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -2245,11 +2175,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -2309,11 +2237,15 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TranscriptResponse"
+                      }
                     }
                   }
                 }
@@ -2327,11 +2259,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -2345,11 +2275,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -2363,11 +2291,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -2381,11 +2307,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -2423,11 +2347,12 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "$ref": "#/components/schemas/TranscriptResponse"
                     }
                   }
                 }
@@ -2441,11 +2366,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Bad Request"
                     }
                   }
                 }
@@ -2459,11 +2382,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Unauthorized"
                     }
                   }
                 }
@@ -2477,11 +2398,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Not Found"
                     }
                   }
                 }
@@ -2495,11 +2414,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": {
-                      "type": "boolean"
-                    },
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Method Not Allowed"
                     }
                   }
                 }
@@ -2739,6 +2656,171 @@
           "instruction",
           "conversational_states"
         ]
+      },
+      "TemplateResponse": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "example": "tp_***"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "instruction": {
+            "type": "object"
+          },
+          "conversational_states": {
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "AssistantResponse": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "example": "as_***"
+          },
+          "template_id": {
+            "type": "string",
+            "example": "tp_***"
+          },
+          "title": {
+            "type": "string"
+          },
+          "conversational_states": {
+            "type": "object"
+          },
+          "language": {
+            "type": "string"
+          },
+          "voice": {
+            "type": "string"
+          },
+          "end_screen": {
+            "type": "string"
+          },
+          "pre_questions": {
+            "type": "array",
+            "items": {}
+          },
+          "webhook": {
+            "type": "string"
+          },
+          "structured_data": {
+            "type": "array",
+            "items": {}
+          },
+          "slug": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "PhoneNumberResponse": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "example": "ph_***"
+          },
+          "number": {
+            "type": "string"
+          },
+          "userId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "monthly_cost": {
+            "type": "number",
+            "example": 3
+          },
+          "purchased_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "TranscriptResponse": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "example": "tr_***"
+          },
+          "assistant_id": {
+            "type": "string",
+            "example": "as_***"
+          },
+          "conversation_id": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "number",
+            "format": "integer"
+          },
+          "full_transcript": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "sender": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "number",
+                  "format": "double"
+                }
+              }
+            }
+          },
+          "transcript_summary": {
+            "type": "string"
+          },
+          "pre_questions": {
+            "type": "object",
+            "additionalProperties": {}
+          },
+          "analytics": {
+            "type": "array",
+            "items": {}
+          }
+        }
       }
     }
   }
