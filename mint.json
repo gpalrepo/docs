@@ -54,6 +54,7 @@
         "api-reference/assistants/find-id",
         "api-reference/assistants/create-web",
         "api-reference/assistants/create-telephony",
+        "api-reference/assistants/create-webtext",
         "api-reference/assistants/delete",
         "api-reference/assistants/update"
       ]
