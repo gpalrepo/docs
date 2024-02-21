@@ -52,9 +52,9 @@
       "pages": [
         "api-reference/assistants/get-all",
         "api-reference/assistants/find-id",
-        "api-reference/assistants/create-web",
+        "api-reference/assistants/create-web-audio",
         "api-reference/assistants/create-telephony",
-        "api-reference/assistants/create-webtext",
+        "api-reference/assistants/create-web-text",
         "api-reference/assistants/delete",
         "api-reference/assistants/update"
       ]

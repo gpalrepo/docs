@@ -1493,7 +1493,7 @@
         ]
       }
     },
-    "/assistants/create-web": {
+    "/assistants/create-web-audio": {
       "post": {
         "operationId": "assistant_create_web",
         "summary": "",
@@ -1605,10 +1605,57 @@
                       "example": "success"
                     },
                     "result": {
-                      "$ref": "#/components/schemas/AssistantResponse"
-                    },
-                    "embed": {
-                      "type": "string"
+                      "type": "object",
+                      "properties": {
+                        "_id": {
+                          "type": "string",
+                          "example": "as_***"
+                        },
+                        "template_id": {
+                          "type": "string",
+                          "example": "tp_***"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "conversational_states": {
+                          "type": "object"
+                        },
+                        "language": {
+                          "type": "string"
+                        },
+                        "voice": {
+                          "type": "string"
+                        },
+                        "slug": {
+                          "type": "string"
+                        },
+                        "embed": {
+                          "type": "string"
+                        },
+                        "webhook": {
+                          "type": "string"
+                        },
+                        "end_screen": {
+                          "type": "string"
+                        },
+                        "pre_questions": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "structured_data": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
                     }
                   }
                 }
@@ -1688,7 +1735,7 @@
         ]
       }
     },
-    "/assistants/create-webtext": {
+    "/assistants/create-web-text": {
       "post": {
         "operationId": "assistant_create_web",
         "summary": "",
@@ -1710,38 +1757,10 @@
                     "minLength": 3,
                     "maxLength": 180
                   },
-                  "voice": {
+                  "language": {
                     "type": "string",
-                    "enum": [
-                      "en-US-Neural2-D",
-                      "en-US-Neural2-C",
-                      "en-US-Neural2-J",
-                      "en-US-News-K",
-                      "en-GB-News-M",
-                      "en-GB-Neural2-C",
-                      "en-GB-Neural2-B",
-                      "en-GB-Neural2-F",
-                      "es-ES-Neural2-B",
-                      "es-ES-Neural2-F",
-                      "es-ES-Neural2-C",
-                      "es-ES-Neural2-D",
-                      "en-US-Eleven-Marcus",
-                      "en-US-Eleven-Myra",
-                      "en-US-Eleven-Adam",
-                      "en-US-OpenAI-alloy",
-                      "en-US-OpenAI-echo",
-                      "en-GB-OpenAI-fable",
-                      "en-US-OpenAI-onyx",
-                      "en-US-OpenAI-nova",
-                      "en-US-OpenAI-shimmer",
-                      "es-ES-OpenAI-alloy",
-                      "es-ES-OpenAI-echo",
-                      "es-ES-OpenAI-onyx",
-                      "es-ES-OpenAI-nova",
-                      "es-ES-OpenAI-shimmer"
-                    ]
+                    "enum": ["en-US", "es-ES"]
                   },
-                  "end_screen": { "type": "string" },
                   "structured_data": {
                     "type": "array",
                     "items": {
@@ -1774,7 +1793,7 @@
                     "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
                   }
                 },
-                "required": ["template_id", "name", "voice"]
+                "required": ["template_id", "name", "language"]
               }
             }
           }
@@ -1792,10 +1811,47 @@
                       "example": "success"
                     },
                     "result": {
-                      "$ref": "#/components/schemas/AssistantResponse"
-                    },
-                    "embed": {
-                      "type": "string"
+                      "type": "object",
+                      "properties": {
+                        "_id": {
+                          "type": "string",
+                          "example": "as_***"
+                        },
+                        "template_id": {
+                          "type": "string",
+                          "example": "tp_***"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "conversational_states": {
+                          "type": "object"
+                        },
+                        "language": {
+                          "type": "string"
+                        },
+                        "slug": {
+                          "type": "string"
+                        },
+                        "embed": {
+                          "type": "string"
+                        },
+                        "structured_data": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "webhook": {
+                          "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
                     }
                   }
                 }
@@ -1983,7 +2039,47 @@
                       "example": "success"
                     },
                     "result": {
-                      "$ref": "#/components/schemas/AssistantResponse"
+                      "type": "object",
+                      "properties": {
+                        "_id": {
+                          "type": "string",
+                          "example": "as_***"
+                        },
+                        "template_id": {
+                          "type": "string",
+                          "example": "tp_***"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "conversational_states": {
+                          "type": "object"
+                        },
+                        "language": {
+                          "type": "string"
+                        },
+                        "voice": {
+                          "type": "string"
+                        },
+                        "phone_number": {
+                          "type": "string"
+                        },
+                        "webhook": {
+                          "type": "string"
+                        },
+                        "structured_data": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
                     }
                   }
                 }
