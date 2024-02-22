@@ -1584,7 +1584,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n   \"conversation_type\": \"web_audio\",\n   \"conversation_id\": <string>,\n   \"assistant_id\": <string>,\n   \"full_transcript\": <array>,\n   \"edited_transcript\": <array>,\n   \"data_points\": <array>,\n   \"pre_questions\": <object>,\n   \"timestamp\": <data>,\n   \"call_duration\": <number>,\n}\n```"
                   }
                 },
                 "required": ["template_id", "name", "voice"]
@@ -1790,7 +1790,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n   \"conversation_type\": \"web_text\",\n   \"conversation_id\": <string>,\n   \"assistant_id\": <string>,\n   \"full_transcript\": <array>,\n   \"edited_transcript\": <array>,\n   \"data_points\": <array>,\n   \"timestamp\": <date>\n}\n```"
                   }
                 },
                 "required": ["template_id", "name", "language"]
@@ -2018,7 +2018,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this data\n ```\n{\n   \"conversation_type\": \"telephony\",\n   \"conversation_id\": <string>,\n   \"assistant_id\": <string>,\n   \"full_transcript\": <array>,\n   \"edited_transcript\": <array>,\n   \"data_points\": <array>,\n   \"from_phone\": <string>,\n   \"to_phone\": <string>,\n   \"timestamp\": <date>,\n   \"call_duration\": <number>,\n}\n```"
                   }
                 },
                 "required": ["template_id", "name", "voice", "phone_number"]
