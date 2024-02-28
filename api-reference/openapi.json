@@ -1584,7 +1584,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data:\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_audio\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"pre_questions\": {},\n    \"timestamp\": 0,\n    \"call_duration\": 0\n  },\n  \"signature\": \"\"\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this data\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_audio\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"pre_questions\": {},\n    \"timestamp\": 0,\n    \"call_duration\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
                   }
                 },
                 "required": ["template_id", "name", "voice"]
@@ -1790,7 +1790,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data\n \n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_text\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"timestamp\": 0\n  },\n  \"signature\": \"\"\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this datan \n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_text\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"timestamp\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
                   },
                   "logo": {
                     "type": "object",
@@ -2033,7 +2033,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this data\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"telephony\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"from_phone\": \"\",\n    \"to_phone\": \"\",\n    \"timestamp\": 0,\n    \"call_duration\": \"\"\n  },\n  \"signature\": \"\"\n}\n```"
+                    "description": "We will trigger post request to this webhook url with this datan\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"telephony\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"from_phone\": \"\",\n    \"to_phone\": \"\",\n    \"timestamp\": 0,\n    \"call_duration\": \"\"\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
                   }
                 },
                 "required": ["template_id", "name", "voice", "phone_number"]
@@ -2388,7 +2388,7 @@
                       "webhook": {
                         "type": "string",
                         "minLength": 5,
-                        "description": "We will trigger post request to this webhook url with this data\n ```\n{\n  \"time_of_call\": <number>,\n  \"call_duration\": <number>,\n  \"call_type\": <string>,\n  \"raw_transcript\": <string>,\n  \"edited_transcript\": <array>,\n  \"conversation_id\": <string>,\n  \"assistant_id\": <string>,\n  \"web_audio_pre_questions\": <object>,\n  \"extracted_data_points\": <array>\n}\n```"
+                        "description": "We will trigger post request to this webhook url with this data\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_audio\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"pre_questions\": {},\n    \"timestamp\": 0,\n    \"call_duration\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
                       }
                     }
                   }
