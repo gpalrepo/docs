@@ -75,6 +75,13 @@
         "api-reference/transcripts/filter-id",
         "api-reference/transcripts/find-id"
       ]
+    },
+    {
+      "group": "Webhook Security",
+      "pages": [
+        "api-reference/wh-secret/generate",
+        "api-reference/wh-secret/retrieve"
+      ]
     }
   ],
   "footerSocials": {

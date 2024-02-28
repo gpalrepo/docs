@@ -1791,6 +1791,21 @@
                     "type": "string",
                     "minLength": 5,
                     "description": "We will trigger post request to this webhook url with this data\n ```\n{\n   \"conversation_type\": \"web_text\",\n   \"conversation_id\": <string>,\n   \"assistant_id\": <string>,\n   \"full_transcript\": <array>,\n   \"edited_transcript\": <array>,\n   \"data_points\": <array>,\n   \"timestamp\": <date>\n}\n```"
+                  },
+                  "logo": {
+                    "type": "object",
+                    "properties": {
+                      "src": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Source url"
+                      },
+                      "href": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Linked to"
+                      }
+                    }
                   }
                 },
                 "required": ["template_id", "name", "language"]
@@ -2708,6 +2723,202 @@
           }
         },
         "tags": ["transcript_find_id"],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/wh-secret/generate": {
+      "post": {
+        "operationId": "wh_secret_generate",
+        "summary": "",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "whsec_***"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Bad Request"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unauthorized"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Not Found"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Method Not Allowed"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["wh_secret_generate"],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/wh-secret/retrieve": {
+      "get": {
+        "operationId": "wh_secret_retrieve",
+        "summary": "",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "whsec_***"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Bad Request"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unauthorized"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Not Found"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Method Not Allowed"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["wh_secret_retrieve"],
         "security": [
           {
             "bearer": []
