@@ -80,7 +80,8 @@
       "group": "Webhook Security",
       "pages": [
         "api-reference/wh-secret/generate",
-        "api-reference/wh-secret/retrieve"
+        "api-reference/wh-secret/retrieve",
+        "api-reference/wh-secret/test"
       ]
     }
   ],
