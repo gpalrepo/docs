@@ -1585,6 +1585,15 @@
                     "type": "string",
                     "minLength": 5,
                     "description": "We will trigger post request to this webhook url with this data\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_audio\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"pre_questions\": {},\n    \"timestamp\": 0,\n    \"call_duration\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
+                  },
+                  "hidden_fields": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 3,
+                      "maxLength": 180
+                    },
+                    "description": "Hidden Fields allows you to use data you already have, track information about your respondents, please refer to our colab example"
                   }
                 },
                 "required": ["template_id", "name", "voice"]
@@ -1790,7 +1799,7 @@
                   "webhook": {
                     "type": "string",
                     "minLength": 5,
-                    "description": "We will trigger post request to this webhook url with this datan \n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_text\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"timestamp\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
+                    "description": "We will trigger post request to this webhook url with this data \n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_text\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"timestamp\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
                   },
                   "logo": {
                     "type": "object",
@@ -1806,6 +1815,15 @@
                         "description": "Linked to"
                       }
                     }
+                  },
+                  "hidden_fields": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 3,
+                      "maxLength": 180
+                    },
+                    "description": "Hidden Fields allows you to use data you already have, track information about your respondents, please refer to our colab example"
                   }
                 },
                 "required": ["template_id", "name", "language"]
@@ -2389,6 +2407,30 @@
                         "type": "string",
                         "minLength": 5,
                         "description": "We will trigger post request to this webhook url with this data\n\n```json\n{\n  \"data\": {\n    \"conversation_type\": \"web_audio\",\n    \"conversation_id\": \"\",\n    \"assistant_id\": \"\",\n    \"full_transcript\": [],\n    \"edited_transcript\": [],\n    \"data_points\": [],\n    \"pre_questions\": {},\n    \"timestamp\": 0,\n    \"call_duration\": 0\n  },\n  \"signature\": \"\"\n}\n```\nWe generated a signature to secure the webhook payload, please refer to the colab example."
+                      },
+                      "logo": {
+                        "type": "object",
+                        "properties": {
+                          "src": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Source url"
+                          },
+                          "href": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Linked to"
+                          }
+                        }
+                      },
+                      "hidden_fields": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 3,
+                          "maxLength": 180
+                        },
+                        "description": "Hidden Fields allows you to use data you already have, track information about your respondents, please refer to our colab example"
                       }
                     }
                   }
